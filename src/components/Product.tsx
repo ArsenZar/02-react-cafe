@@ -15,3 +15,4 @@ export default function Product({ name, imgUrl, price }: ProductProps) {
         </div>
     );
 }
+
