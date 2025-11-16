@@ -7,7 +7,7 @@ import Book from "./Book";
 export default function App() {
   return (
     <>
-      <Book />
+      <Book type="error"/>
       <h1>Best selling</h1>
       <Product
         name="Tacos With Lime"

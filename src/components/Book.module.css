@@ -1,3 +1,9 @@
 .li{
     font-size: 30px;
 }
+.success{
+    color: green;
+}
+.error{
+    color: brown;
+}
