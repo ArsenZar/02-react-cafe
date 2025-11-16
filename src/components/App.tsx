@@ -2,10 +2,12 @@
 
 import Product from "./Product";
 import Mailbox from "./Mailbox";
+import Book from "./Book";
 
 export default function App() {
   return (
     <>
+      <Book />
       <h1>Best selling</h1>
       <Product
         name="Tacos With Lime"
@@ -17,7 +19,7 @@ export default function App() {
         imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?w=640"
         price={14.29}
       />
-      <Mailbox username="Arsen" messages={["hi", "hello"]} />
+      <Mailbox username="Arsen" messages={["hello", "how r u?"]} />
     </>
   );
 }
