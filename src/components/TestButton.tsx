@@ -1,12 +1,24 @@
-// 1. Імпортуємо функцію useState
+// // 1. Імпортуємо функцію useState
+// import { useState } from "react";
+
+// export default function TestButton() {
+//     // 2. Оголошуємо стан clicks
+//     const [clicks, setClicks] = useState(0);
+
+//     const handleClick = () => {
+//         // 3. Використовуємо setClicks для зміни стану clicks
+//         setClicks(clicks + 1);
+//     };
+
+//     return <button onClick={handleClick}>Current: {clicks}</button>;
+// }
+
 import { useState } from "react";
 
-export default function TestButton() {
-    // 2. Оголошуємо стан clicks
+export default function App() {
     const [clicks, setClicks] = useState(0);
 
     const handleClick = () => {
-        // 3. Використовуємо setClicks для зміни стану clicks
         setClicks(clicks + 1);
     };
 
