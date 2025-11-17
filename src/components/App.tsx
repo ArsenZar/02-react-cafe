@@ -6,10 +6,14 @@ import Book from "./Book";
 import UserMenu from "./UserMenu";
 import HandleClick from "./HandleClick";
 import TestButton from "./TestButton";
+import ClickCounter from "./ClickCounter";
 
 export default function App() {
   return (
     <>
+      <ClickCounter />
+      <ClickCounter />
+
       <HandleClick />
       <TestButton />
       <UserMenu name="Arseniy" />
