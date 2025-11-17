@@ -5,11 +5,13 @@ import Mailbox from "./Mailbox";
 import Book from "./Book";
 import UserMenu from "./UserMenu";
 import HandleClick from "./HandleClick";
+import TestButton from "./TestButton";
 
 export default function App() {
   return (
     <>
       <HandleClick />
+      <TestButton />
       <UserMenu name="Arseniy" />
       <Book type="error"/>
       <h1>Best selling</h1>
