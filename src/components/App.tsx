@@ -3,10 +3,12 @@
 import Product from "./Product";
 import Mailbox from "./Mailbox";
 import Book from "./Book";
+import UserMenu from "./UserMenu";
 
 export default function App() {
   return (
     <>
+      <UserMenu name="Arseniy" />
       <Book type="error"/>
       <h1>Best selling</h1>
       <Product
