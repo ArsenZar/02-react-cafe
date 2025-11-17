@@ -7,5 +7,5 @@ export default function ClickCounter() {
         setClicks(clicks + 1);
     };
 
-    return <button onClick={handleClick}>Clicked: {clicks}</button> ;
+    return <><button onClick={handleClick}>Clicked: {clicks}</button> <br></br></>;
 }

@@ -1,5 +1,5 @@
 // src/components/App.tsx
-
+import { useState } from "react";
 import Product from "./Product";
 import Mailbox from "./Mailbox";
 import Book from "./Book";
@@ -9,8 +9,30 @@ import TestButton from "./TestButton";
 import ClickCounter from "./ClickCounter";
 
 export default function App() {
+
+  const [count, setCount] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
+  const toggleMessage = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
+      <button onClick={handleClick}>Clicked: {count}</button>
+      <button onClick={toggleMessage}>
+        {isOpen ? "Hide message" : "Show message"}
+      </button>
+
+      {isOpen && <p>🎉 Surprise! You toggled me.</p>}
+
+      <br />
+      <br />
+
       <ClickCounter />
       <ClickCounter />
       <br></br>
