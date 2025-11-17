@@ -1,7 +1,7 @@
 // 1. Імпортуємо функцію useState
 import { useState } from "react";
 
-export default function App() {
+export default function TestButton() {
     // 2. Оголошуємо стан clicks
     const [clicks, setClicks] = useState(0);
 
