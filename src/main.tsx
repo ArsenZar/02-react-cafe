@@ -3,5 +3,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./components/App";
 
+import "modern-normalize";
+// Глобальні стилі (додатково)
 
 createRoot(document.getElementById("root") as HTMLElement).render(<App />);
