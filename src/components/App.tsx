@@ -7,6 +7,7 @@ import UserMenu from "./UserMenu";
 import HandleClick from "./HandleClick";
 import TestButton from "./TestButton";
 import ClickCounter from "./ClickCounter";
+import NumberInput from "./NumberInput";
 
 export default function App() {
 
@@ -21,8 +22,17 @@ export default function App() {
     setIsOpen(!isOpen);
   };
 
+
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+
   return (
     <>
+      <NumberInput label="Number 1" value={a} onValueChange={setA} />
+      <NumberInput label="Number 2" value={b} onValueChange={setB} />
+      <p>Result: {a + b}</p>
+
+
       <button onClick={handleClick}>Clicked: {count}</button>
       <button onClick={toggleMessage}>
         {isOpen ? "Hide message" : "Show message"}
