@@ -8,6 +8,9 @@ import HandleClick from "./HandleClick";
 import TestButton from "./TestButton";
 import ClickCounter from "./ClickCounter";
 import AppTest from "./AppTest";
+import StepCounter from "./StepCounter";
+import ToggleMessage from "./ToggleMessage";
+import TextInput from "./TextInput";
 
 export default function App() {
 
@@ -22,10 +25,22 @@ export default function App() {
     setIsOpen(!isOpen);
   };
 
+  const [firstName, setFirstName] = useState("");
+  const [secName, setSecName] = useState("");
+
 
   return (
     <>
       
+      <TextInput label="Name" value={firstName} onValueChange={setFirstName} />
+      <TextInput label="SureName" value={secName} onValueChange={setSecName} />
+      <p>Full name: {firstName} {secName}</p>
+
+      
+      <ToggleMessage />
+      
+      <StepCounter />
+
       <AppTest />
 
       <button onClick={handleClick}>Clicked: {count}</button>
