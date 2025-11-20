@@ -1,10 +1,10 @@
 interface TextInputProps{
     label: string;
     value: string;
-    onValueChange: (value: string) => void;
+    setInput: (value: string) => void;
 }
 
-export default function TextInput({ label, value, onValueChange }: TextInputProps) { 
+export default function TextInput({ label, value, setInput }: TextInputProps) { 
     return (
         <>
             <label>{label}</label>
@@ -12,7 +12,7 @@ export default function TextInput({ label, value, onValueChange }: TextInputProp
                 type="text"
                 value={value}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                    onValueChange(e.target.value);
+                    setInput(e.target.value);
                  } }
             />
         </>

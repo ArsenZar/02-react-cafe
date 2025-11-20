@@ -28,12 +28,18 @@ export default function App() {
   const [firstName, setFirstName] = useState("");
   const [secName, setSecName] = useState("");
 
+  const obj = { a: 1, b: 2 };
+  const copy = { obj };
+
+  console.log(obj);
+  console.log(copy);
+  
 
   return (
     <>
       
-      <TextInput label="Name" value={firstName} onValueChange={setFirstName} />
-      <TextInput label="SureName" value={secName} onValueChange={setSecName} />
+      <TextInput label="Name" value={firstName} setInput={setFirstName} />
+      <TextInput label="SureName" value={secName} setInput={setSecName} />
       <p>Full name: {firstName} {secName}</p>
 
       
