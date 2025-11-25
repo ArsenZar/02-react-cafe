@@ -21,7 +21,13 @@ export default function App() {
     });
   };
 
-  const resetVotes = () => { }
+  const resetVotes = () => {
+    setVotes({
+      good: 0,
+      neutral: 0,
+      bad: 0
+    });
+   }
 
 
   return (
